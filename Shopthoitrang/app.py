@@ -7,6 +7,18 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 # API trả về danh sách sản phẩm (dữ liệu mẫu)
 @app.route('/api/products')
 def get_products():

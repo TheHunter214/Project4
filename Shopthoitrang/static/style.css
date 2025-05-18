@@ -1,84 +1,77 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
     color: #333;
 }
 
 header {
-    background-color: #111;
-    color: white;
+    background-color: #1e1e1e;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    color: white;
 }
 
-header .logo {
-    font-size: 1.8rem;
+.logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
 }
 
 .hero {
-    background: url('https://via.placeholder.com/1200x400/000000/FFFFFF?text=Fashion+Banner') center/cover no-repeat;
-    color: black;
+    background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
     text-align: center;
-    padding: 5rem 1rem;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .products {
-    padding: 2rem;
+    padding: 40px 20px;
     text-align: center;
-}
-
-.products h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
 .product-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 1rem;
+    justify-content: center;
+    gap: 20px;
 }
 
 .product {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1rem;
-    width: 220px;
-    transition: transform 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-5px);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 200px;
 }
 
 .product img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-}
-
-.product h3 {
-    margin: 0.5rem 0 0.2rem;
-    font-size: 1.1rem;
+    max-width: 100%;
+    border-radius: 4px;
 }
 
 .price {
@@ -87,23 +80,24 @@ nav a {
 }
 
 button {
-    margin-top: 0.5rem;
-    background-color: #e91e63;
+    margin-top: 10px;
+    padding: 10px;
+    background: #1e1e1e;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #c2185b;
+    background: #ffcc00;
+    color: #1e1e1e;
 }
 
 footer {
-    background: #f1f1f1;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
 }
