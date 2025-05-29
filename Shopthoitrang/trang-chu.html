@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ - Shop Quần Áo</title>
+    <link rel="stylesheet" href="css/trang-chu.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo shop" style="height:48px;margin-bottom:6px;"> 
+        <h1>SHOP QUẦN ÁO ĐTN</h1>
+        <nav>
+            <a href="trang-chu.html">Trang chủ</a> |
+            <a href="gio-hang.html">Giỏ hàng</a> |
+            <a href="lich-su-don-hang.html">Lịch sử đơn hàng</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Danh sách sản phẩm</h2>
+        <div id="danh-muc">
+            <!-- Danh mục sản phẩm sẽ load tại đây -->
+        </div>
+        <div id="danh-sach-san-pham" class="ds-san-pham">
+            <!-- Sản phẩm sẽ được render tại đây -->
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/trang-chu.js"></script>
+    <div id="toast" style="position:fixed;bottom:30px;right:30px;z-index:999;display:none;min-width:200px;background:#d76d77;color:#fff;padding:14px 24px;border-radius:8px;box-shadow:0 4px 18px #d76d77c0;font-weight:600;"></div>
+</body>
+</html>

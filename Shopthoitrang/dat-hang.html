@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dat-hang.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="images/logo.png" alt="Logo Shop" class="logo-img">
+        </div>
+        <h1><a href="trang-chu.html" style="color:#fff;text-decoration:none;">SHOP QUẦN ÁO ONLINE</a></h1>
+        <nav>
+            <a href="trang-chu.html">Trang chủ</a> |
+            <a href="gio-hang.html">Giỏ hàng</a> |
+            <a href="lich-su-don-hang.html">Lịch sử đơn hàng</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Xác nhận đặt hàng</h2>
+        <form id="form-dat-hang" onsubmit="return datHang(event)">
+            <div class="tt-section">
+                <label>Họ tên: <input type="text" id="tenKhach" required></label>
+                <label>Số điện thoại: <input type="tel" id="sdtKhach" required pattern="0[0-9]{9,10}"></label>
+                <label>Địa chỉ nhận hàng: <input type="text" id="diaChiKhach" required></label>
+            </div>
+            <h3>Sản phẩm đặt mua</h3>
+            <div id="sp-dat-hang"></div>
+            <div class="tong-tien" id="tong-tien"></div>
+            <button type="submit" class="dat-hang-btn">Đặt hàng</button>
+        </form>
+    </main>
+    <div id="toast" style="position:fixed;bottom:30px;right:30px;z-index:999;display:none;min-width:200px;background:#d76d77;color:#fff;padding:14px 24px;border-radius:8px;box-shadow:0 4px 18px #d76d77c0;font-weight:600;"></div>
+    <script src="js/dat-hang.js"></script>
+</body>
+</html>
