@@ -168,6 +168,7 @@ window.themVaoGio = function(idSanPham) {
     let ds = getGioHang();
     let sp = ds.find(x => x.id_san_pham === idSanPham);
     if (sp) {
+        
         sp.so_luong += 1;
     } else {
         ds.push({ id_san_pham: idSanPham, so_luong: 1 });

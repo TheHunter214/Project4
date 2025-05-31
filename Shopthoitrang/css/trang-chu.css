@@ -204,3 +204,45 @@ main h2 {
         font-size: 1.13rem;
     }
 }
+footer {
+  background: linear-gradient(90deg, #442283 0%, #d76d77 60%, #ffb07c 100%);
+  color: #fff;
+  padding: 32px 0 24px 0;
+  margin-top: 48px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 -2px 12px #44228320;
+}
+
+footer .footer-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+footer strong {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 1px 2px 8px #44228360;
+}
+
+footer span, footer a {
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffd6e0;
+  text-decoration: underline;
+}
+
+footer .footer-copyright {
+  color: #fff;
+  margin-top: 8px;
+  font-size: 15px;
+  opacity: 0.85;
+}

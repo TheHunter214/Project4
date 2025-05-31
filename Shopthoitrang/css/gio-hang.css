@@ -121,16 +121,3 @@ h2 {
     .tong-tien, .dat-hang-btn { font-size: 1rem;}
     main { padding: 12px 2vw 18px 2vw; }
 }
-.logo-header {
-    text-align: center;
-    margin-bottom: 8px;
-}
-.logo-img {
-    height: 48px;
-    width: auto;
-    border-radius: 50%;
-    box-shadow: 0 2px 12px #fff4;
-}
-header h1 {
-    margin-top: 0;
-}
